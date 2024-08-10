@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Nav-Bar Style */
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 200px;
+}
+.nav-links{
+    display: flex;
+    gap: 40px;
+    
+}
+.nav-item{
+    list-style: none;
+}
+.nav-item>a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 1.5rem;
+    font-weight: 600px;
+}
+
+.nav-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+/* Header Syle */
+
+.header{
+    background-color: rgba(255, 144, 14, 0.1);
+    margin: 0 auto;
+    max-width: 100%;
+    margin-bottom: 100px;
+    
+}
+
+/* Banner Style */
+
+.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.banner-contain{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.banner-description{
+    font-size: 1rem;
+    color: #424242;
+}
+
+.banner-btn{
+    width: 180px;
+    height: 64px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600px;
+    margin-bottom: 50px;
+}
+
+.banner-image{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+/* Teams section styles */
+main{
+    
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+.teams{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    border-radius: 10px;
+}
+.team-about{
+    margin-left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Header Section */
+
+@media screen and (max-width: 576px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    .nav-links{
+        flex-direction: column;
+    }
+    .header{
+        padding: 20px;
+    }
+    .teams{
+        flex-direction: column;
+    }
+    .image-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 30px;
+    }
+
+}
